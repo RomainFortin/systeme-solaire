@@ -1,0 +1,194 @@
+/*IPHONE 4*/
+@media (max-width: 320px){
+
+}
+/*SMARTPHONE PORTRAIT*/
+@media (min-width: 321px) and (max-width: 767px){
+    #system{
+        padding-left: 0;
+    }
+    #slide{
+        height: 100%;
+        width: 180px;
+    }
+    .barreh1
+    {
+        height:35px;
+    }
+    h1
+    {
+        font-size:15px;
+    }
+    .liste{
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    .liste p
+    {
+        margin: 0;
+        font-size: 12px;
+    } 
+    .infosoleil,.infomercure,.infovenus,.infoterre,.infomars,.infojupiter,.infosaturne,.infouranus,.infoneptune
+    {
+        height: 580px;
+        width: 180px;
+    }
+
+    .infosoleil,.infomercure,.infovenus,.infoterre,.infomars,.infojupiter,.infosaturne,.infouranus,.infoneptune
+    {
+        height: 580px;
+        width: 150px;
+    }
+    .infosoleil
+    {
+        height: 523px;
+    }
+    .infosaturne
+    {
+        height: 580px;
+    }
+
+    .sun
+    {
+        height: 20px;
+        width: 20px;
+        box-shadow: 0px 0px 12px 3px #f5f29d;
+    }
+    .mercury
+    {
+        height: 2.5px;
+        width: 2.5px;
+        margin-top: -28.5px;
+        transform-origin: center 29.75px; 
+    }
+    .orbitmercury
+    {
+        height: 57px;
+        width: 57px;
+    }
+    .venus
+    {
+        height: 5px;
+        width: 5px;
+        margin-top: -38.5px;
+        transform-origin: center 41px; 
+    }
+    .orbitvenus
+    {
+        height: 77px;
+        width: 77px;
+    }
+    .earth
+    {
+        height: 7.5px;
+        width: 7.5px;
+        margin-top: -48.5px;
+        transform-origin: center 52.25px; 
+    }
+    .orbitearth
+    {
+        height: 97px;
+        width: 97px;
+    }
+    .moon
+    {
+        display: none;
+    }
+    .orbitmoon
+    {
+        display: none;
+    }
+    .mars
+    {
+        height: 6px;
+        width: 6px;
+        margin-top: -58.5px;
+        transform-origin: center 61.5px; 
+    }
+    .orbitmars
+    {
+        height: 117px;
+        width: 117px;
+    }
+    .asteroid1
+    {
+        height: 147px;
+        width: 147px;
+        border: dotted 1.5px rgba(105, 105, 105, 0.5);
+    }
+    .jupiter
+    {
+        height: 15px;
+        width: 15px;
+        margin-top: -90px;
+        transform-origin: center 97.5px;
+    }
+    .orbitjupiter
+    {
+        height: 180px;
+        width: 180px;
+    }
+    .saturn
+    {
+        height: 12.5px;
+        width: 12.5px;
+        margin-top: -108.5px;
+        transform-origin: center 114.75px;
+    }
+    .orbitsaturn
+    {
+        height: 217px;
+        width: 217px;
+    }
+    .saturnring
+    {
+        margin-left: -4.63px;
+        margin-top: -4.63px;
+        border: solid 2px #8b8b8b;
+        height: 17.5px;
+        width: 17.5px;
+    }
+    .uranus
+    {
+        height: 10px;
+        width: 10px;
+        margin-top: -125px;
+        transform-origin: center 130px; 
+    }
+    .orbituranus
+    {
+        height: 250px;
+        width: 250px;
+    }
+    .neptune
+    {
+        height: 9px;
+        width: 9px;
+        margin-top: -148.5px;
+        transform-origin: center 153.1px;
+    }
+    .orbitneptune
+    {
+        height: 297px;
+        width: 297px;
+    }
+    .asteroid2
+    {
+        height: 330px;
+        width: 330px;
+        opacity: 0.5;
+        border: dotted 2px rgba(105, 105, 105, 0.5);
+    }
+}
+/*SMARTPHONE LANDSCAPE*/
+@media (min-width: 321px) and (max-width: 767px) and (orientation: landscape){
+
+}
+/*TABLETTE ET LAPTOP*/
+@media (min-width: 767px) and (max-width: 1199px){
+
+}
+/*TABLETTE LANDSCAPE*/
+@media (min-width: 767px) and (max-width: 1199px) and (orientation: landscape){
+
+}

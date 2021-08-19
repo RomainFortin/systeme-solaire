@@ -1,0 +1,540 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #121212;
+    overflow: hidden;
+}
+
+/*debut systeme*/
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+#system {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    transition-duration: 0.3s;
+    padding: 50px;
+}
+
+/*fin systeme*/
+
+/*debut planetes*/
+
+.sun {
+    position: absolute;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    background-color: yellow;
+    box-shadow: 0px 0px 12px 3px #f5f29d;
+}
+
+.mercury {
+    position: absolute;
+    border-radius: 50%;
+    height: 5px;
+    width: 5px;
+    background-color: dimgrey;
+    margin-top: -8vh;
+    animation: anim 2s linear infinite;
+    transform-origin: center calc(4vh + 5px / 2);
+    z-index: 3;
+}
+
+.orbitmercury {
+    position: absolute;
+    border-radius: 50%;
+    border: solid 1px white;
+    height: 8vh;
+    width: 8vh;
+    opacity: 0.5;
+}
+
+.venus {
+    position: absolute;
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+    background-color: burlywood;
+    margin-top: -14vh;
+    animation: anim 5s linear infinite;
+    transform-origin: center calc(7vh + 10px / 2);
+    z-index: 3;
+}
+
+.orbitvenus {
+    position: absolute;
+    border-radius: 50%;
+    border: solid 1px white;
+    height: 14vh;
+    width: 14vh;
+    opacity: 0.5;
+}
+
+.earth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    background-color: dodgerblue;
+    margin-top: -20vh;
+    animation: anim 10s linear infinite;
+    transform-origin: center calc(10vh + 15px / 2);
+    z-index: 3;
+}
+
+.orbitearth {
+    position: absolute;
+    border-radius: 50%;
+    border: solid 1px white;
+    height: 20vh;
+    width: 20vh;
+    opacity: 0.5;
+}
+
+.moon {
+    position: absolute;
+    border-radius: 50%;
+    height: 5px;
+    width: 5px;
+    background-color: grey;
+    margin-top: calc(-25px - 2.5px);
+    animation: anim 2s linear infinite;
+    transform-origin: center calc(12.5px + 5px / 2);
+    z-index: 3;
+}
+
+.orbitmoon {
+    position: absolute;
+    border-radius: 50%;
+    border: solid 1px white;
+    height: 25px;
+    width: 25px;
+    opacity: 0.5;
+}
+
+.mars {
+    position: absolute;
+    border-radius: 50%;
+    height: 12px;
+    width: 12px;
+    background-color: darkred;
+    margin-top: -26vh;
+    animation: anim 15s linear infinite;
+    transform-origin: center calc(13vh + 12px / 2);
+    z-index: 3;
+}
+
+.orbitmars {
+    position: absolute;
+    border-radius: 50%;
+    border: solid 1px white;
+    height: 26vh;
+    width: 26vh;
+    opacity: 0.5;
+}
+
+.asteroid1 {
+    position: absolute;
+    border-radius: 50%;
+    border: dotted 3px rgba(105, 105, 105, 0.5);
+    height: 35vh;
+    width: 35vh;
+    opacity: 0.5;
+    animation: anim 30s linear infinite;
+}
+
+.jupiter {
+    position: absolute;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    background-color: saddlebrown;
+    margin-top: -45vh;
+    animation: anim 40s linear infinite;
+    transform-origin: center calc(22.5vh + 30px / 2);
+    z-index: 3;
+}
+
+.orbitjupiter {
+    position: absolute;
+    border-radius: 50%;
+    border: solid 1px white;
+    height: 45vh;
+    width: 45vh;
+    opacity: 0.5;
+}
+
+.saturn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    background-color: coral;
+    margin-top: -56vh;
+    animation: anim 60s linear infinite;
+    transform-origin: center calc(28vh + 25px / 2);
+    z-index: 3;
+}
+
+.orbitsaturn {
+    position: absolute;
+    border-radius: 50%;
+    border: solid 1px white;
+    height: 56vh;
+    width: 56vh;
+    opacity: 0.5;
+}
+
+.saturnring {
+    position: absolute;
+    border-radius: 50%;
+    border: solid 4px #8b8b8b;
+    height: 35px;
+    width: 35px;
+    opacity: 0.3;
+}
+
+.uranus {
+    position: absolute;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    background-color: skyblue;
+    margin-top: -66vh;
+    animation: anim 80s linear infinite;
+    transform-origin: center calc(33vh + 20px / 2);
+    z-index: 3;
+}
+
+.orbituranus {
+    position: absolute;
+    border-radius: 50%;
+    border: solid 1px white;
+    height: 66vh;
+    width: 66vh;
+    opacity: 0.5;
+}
+
+.neptune {
+    position: absolute;
+    border-radius: 50%;
+    height: 18px;
+    width: 18px;
+    background-color: #1f1fb2;
+    margin-top: -80vh;
+    animation: anim 120s linear infinite;
+    transform-origin: center calc(40vh + 18px / 2);
+    z-index: 3;
+}
+
+.orbitneptune {
+    position: absolute;
+    border-radius: 50%;
+    border: solid 1px white;
+    height: 80vh;
+    width: 80vh;
+    opacity: 0.5;
+}
+
+.asteroid2 {
+    position: absolute;
+    border-radius: 50%;
+    border: dotted 3px rgba(105, 105, 105, 0.5);
+    height: 90vh;
+    width: 90vh;
+    opacity: 0.5;
+    animation: anim 180s linear infinite;
+}
+
+
+@keyframes anim {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+
+    ;
+} 
+
+/*fin planetes*/
+
+/*debut liste*/
+
+#slide {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    background-color: #393939;
+    -webkit-transform: translateX(-250px);
+    transform: translateX(-250px);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    height: 100%;
+    width: 230px;
+    left: 0;
+    top: 0;
+}
+
+.barreh1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: darkorange;
+    width: 100%;
+    height: 45px;
+    z-index: 5000;
+}
+
+h1 {
+    -ms-flex-item-align: center;
+    align-self: center;
+    font-family: century gothic;
+    font-size: 18px;
+    margin: 0;
+    color: #393939;
+    z-index: 500;
+}
+
+.burger {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 25px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.bar {
+    width: 100%;
+    height: 1px;
+    background: white;
+}
+
+.liste {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    list-style-type: none;
+    font-family: century gothic;
+    font-size: 14px;
+    left: 0;
+    line-height: 35px;
+    height: 100%;
+    width: 100%;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+.Soleil,
+.Venus,
+.Mercure,
+.Terre,
+.Mars,
+.Jupiter,
+.Saturne,
+.Uranus,
+.Neptune {
+    cursor: pointer;
+    width: 100%;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+.liste p {
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    padding-left: 10%;
+}
+
+/*fin liste*/
+
+/*debut infos*/
+
+/*debut images*/
+
+.imgneptune,
+.imguranus,
+.imgsaturne,
+.imgjupiter,
+.imgmars,
+.imgterre,
+.imgvenus,
+.imgmercure,
+.imgsoleil {
+    position: absolute;
+    width: 90%;
+    margin: 5%;
+}
+
+/*fin images*/
+
+/*debut description planetes*/
+
+.textesoleil,
+.textemercure,
+.textevenus,
+.texteterre,
+.textemars,
+.textejupiter,
+.textesaturne,
+.texteuranus,
+.texteneptune {
+    position: absolute;
+    bottom: 0;
+    line-height: 200%;
+    left: 1%;
+    color: white;
+    font-size: 0.75vw;
+    padding: 5%;
+    font-family: century gothic;
+    text-align: left;
+}
+
+/*fin description planetes*/
+
+.listemod {
+    -webkit-transform: scaleX(1) !important;
+    transform: scaleX(1) !important;
+    opacity: 1 !important;
+}
+
+/*fin hover infos*/
+
+/*debut hover background*/
+
+.limod {
+    background-color: #292929;
+}
+
+/*fin hover background*/
+
+/*debut panneau infos*/
+
+.infosoleil,
+.infomercure,
+.infovenus,
+.infoterre,
+.infomars,
+.infojupiter,
+.infosaturne,
+.infouranus,
+.infoneptune {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #292929;
+    height: 580px;
+    width: 226px;
+    left: 100%;
+    top: 0;
+    -webkit-transform-origin: left;
+    transform-origin: left;
+    opacity: 0;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+/*fin panneau infos*/
+
+/*debut transition*/
+
+
+
+/*fin transition*/
+
+/*soleil*/
+
+.infosoleil {
+    height: 523px;
+}
+
+/*saturne*/
+
+.infosaturne {
+    height: 27vw;
+}
+
+.close {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+    height: 45px;
+    background: #292929;
+    cursor: pointer;
+}
+
+.close p {
+    margin: 0;
+    padding-left: 0;
+    text-align: center;
+    font-family: century gothic;
+    font-size: 13px;
+    color: white;
+}
+
+/*fin infos*/
